@@ -1,7 +1,7 @@
 import allure
 import requests
 
-from page.add_courier import AddCourier
+from data.create_random import CreateRandom
 from ursl import Urls
 
 
@@ -12,7 +12,7 @@ class TestAddCourier:
     def test_add_courier(self):
 
 
-        payload = {"login": AddCourier.generate_random_string(5),
+        payload = {"login": CreateRandom.generate_random_string(5),
                    'password': "12345",
                    'firstName': 'Миша'
                    }
@@ -35,7 +35,7 @@ class TestAddCourier:
     @allure.title('Зоднаие двух одинаковых курьеров')
     @allure.description('Проверка регистрации друх одинаковых курьеров')
     def test_add_courier_repit_login(self):
-        payload = {"login": AddCourier.generate_random_string(6),
+        payload = {"login": CreateRandom.generate_random_string(6),
                    'password': "12345",
                    'firstName': 'Мыша'
                    }

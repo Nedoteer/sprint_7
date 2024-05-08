@@ -2,7 +2,7 @@ import allure
 import pytest
 import requests
 
-from page.add_order import AddOrder
+from data.add_order import AddOrder
 from ursl import Urls
 
 

@@ -1,7 +1,7 @@
 import allure
 import requests
 
-from page.login_courier import LoginCourier
+from data.login_courier import LoginCourier
 from ursl import Urls
 
 
